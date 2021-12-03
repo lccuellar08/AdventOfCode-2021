@@ -1,6 +1,6 @@
 import java.io.File
 
-fun main(args: Array<String>) {
+fun mainDay1() {
     val fileName = "/Users/lc2377/IdeaProjects/AdeventOfCode-2021/src/input_1.txt"
     val numbers = readInput(fileName)
 

@@ -1,6 +1,6 @@
 import java.io.File
 
-fun main(args: Array<String>) {
+fun mainDay2() {
     val fileName = "/Users/lc2377/IdeaProjects/AdeventOfCode-2021/src/input_2.txt"
     val instructions = readInput(fileName)
 
@@ -54,8 +54,8 @@ private fun readInput(fileName: String): List<Pair<Direction, Int>> {
     val instructions = mutableListOf<Pair<Direction, Int>>()
     File(fileName).forEachLine {
         val tokens = it.split(" ")
-        var units = tokens[1].toInt()
-        var pair: Pair<Direction, Int>
+        val units = tokens[1].toInt()
+        val pair: Pair<Direction, Int>
 
         when(tokens[0]) {
             "forward" -> pair = Pair(Direction.FORWARD, units)
