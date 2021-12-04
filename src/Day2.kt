@@ -57,11 +57,11 @@ private fun readInput(fileName: String): List<Pair<Direction, Int>> {
         val units = tokens[1].toInt()
         val pair: Pair<Direction, Int>
 
-        when(tokens[0]) {
-            "forward" -> pair = Pair(Direction.FORWARD, units)
-            "down" -> pair = Pair(Direction.DOWN, units)
-            "up" -> pair = Pair(Direction.UP, units)
-            else -> pair = Pair(Direction.FORWARD, units)
+        pair = when(tokens[0]) {
+            "forward" -> Pair(Direction.FORWARD, units)
+            "down" -> Pair(Direction.DOWN, units)
+            "up" -> Pair(Direction.UP, units)
+            else -> Pair(Direction.FORWARD, units)
         }
 
         instructions.add(pair)
