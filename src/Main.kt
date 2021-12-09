@@ -8,5 +8,6 @@ fun main(args: Array<String>) {
     //mainDay5()
     //mainDay6()
     //mainDay7()
-    mainDay8()
+    //mainDay8()
+    mainDay9()
 }
