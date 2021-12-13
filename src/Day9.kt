@@ -49,8 +49,6 @@ fun findBasinSize(matrix: Array<IntArray>, target: Pair<Int, Int>): Int {
     var basinSize = 0
     paths[target.second][target.first] = 0
 
-    //printMatrix(matrix, paths)
-
     val neighbors = mutableListOf(target)
 
     while(neighbors.isNotEmpty()) {
@@ -64,7 +62,6 @@ fun findBasinSize(matrix: Array<IntArray>, target: Pair<Int, Int>): Int {
                 basinSize++
             }
         }
-        //printMatrix(matrix, paths)
     }
 
     return basinSize
