@@ -92,8 +92,8 @@ fun printFoldableBoard(board: Array<IntArray>) {
     board.forEach {
         it.forEach {e ->
             when(e) {
-                0 -> print(". ")
-                1 -> print("# ")
+                0 -> print("  ")
+                1 -> print("█ ")
             }
         }
         println()
@@ -107,8 +107,8 @@ fun createBoard(points: List<Pair<Int,Int>>): Array<IntArray> {
 
     println("Max x: $maxX, MaxY: $maxY")
 
-    val board = Array(maxY + 1) {
-        IntArray(maxX + 1) {
+    val board = Array(maxY + 2) {
+        IntArray(maxX + 2) {
             0
         }
     }
