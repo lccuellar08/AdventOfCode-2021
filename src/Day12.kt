@@ -14,7 +14,7 @@ fun mainDay12() {
     // Part 2
     val secondPaths = caveDFS(pathMap, mutableMapOf<String, Int>(), mutableListOf("start"), true)
     val secondValidPaths = secondPaths.filter {it.last() == "end"}
-    
+
     val secondValidPathsCount = secondValidPaths.count()
     println("Total number of valid second paths: $secondValidPathsCount")
 }
